@@ -1,4 +1,4 @@
-const buttons = document.querySelectorAll('button');
+const buttons = document.querySelectorAll('.button');
         const body = document.querySelector("body");
 
         buttons.forEach(function(button){
@@ -18,5 +18,6 @@ const buttons = document.querySelectorAll('button');
             if(e.target.id === 'yellow'){
                 body.style.backgroundColor = e.target.id;
             }
+            
             });
         });
