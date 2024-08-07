@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Coding ki duniya</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    
+</body>
+<script>
+    // SetInterval ka use krke hum time set kr skte hai ki kisi kaam ko 
+    // ek time interval me krte jaao looping ki tarah
+  const sayDate = function(str){
+      console.log(str,Date.now());
+   }
+   const intervalClose = setInterval(sayDate,3000,"hi");
+
+   // bhai to rokna bhi to padega nhi to continous hota rhega
+   // clearInterval ka use hum rokne ke liye krte hai
+   clearInterval(intervalClose);
+   
+</script>
+</html>
